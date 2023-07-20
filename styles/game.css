@@ -286,37 +286,48 @@ section {
 
 }
 
-/* .game-card .hoverst img{
+.game-card .card-img .hov-img{
     width: 3em;
     height: 3em;
     align-items: center;
     justify-content: center;
+    padding-left: 90px;
+    padding-bottom: 25px;
     
 }
-.game-card .hoverst p{
-    background:  linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+
+.game-card .card-img p {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Work Sans;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+game-card .card-img .hide {
+    display: none;
 
 }
-.game-card .card-img:hover {
-    /* opacity: 1; */
+.game-card .card-img>div{
+    display: none;
+}
+.game-card .card-img>div:hover{
+    /* border-radius: 8px; */
+    padding: 0 55px;
+    display: inline-block;
+    line-height: 268px;
+    position: relative;
+    bottom: 342px;
+    border-radius: 16px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+border-width:450px;
 
-/* background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
-    border-radius: 16px; */
-/* color: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
- } */
-
-
-
-
+}
 
 .game-card ul figure img {
     width: 250px;
@@ -474,11 +485,6 @@ footer .footer-container {
     display: grid;
 }
 
-/* .footer-list .logo-list .img-logo {
-    margin: 5px;
-    padding: 0;
-} */
-
 .footer-list .logo-list li img {
     padding-top: 35px;
     width: 2.5em;
@@ -524,15 +530,18 @@ footer .footer-container {
     }
 
 
-    nav .nav-content {
+   nav .nav-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
+       
 
     }
 
     nav .nav-content a {
         margin: 25px;
+        align-items: center;
+       justify-content: center;
     }
 
     .banner {
@@ -671,6 +680,7 @@ footer .footer-container {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         box-shadow: none;
+        justify-content: center;
 
     }
 
@@ -681,15 +691,15 @@ footer .footer-container {
     }
 
 
-    nav .nav-content {
+    section .nav-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-
+       
     }
 
     nav .nav-content a {
-        margin: 25px;
+        justify-content: center;
     }
 
     .banner {
